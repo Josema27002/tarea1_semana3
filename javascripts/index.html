@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Ventas de grano de café</title>
+    <link href="css/main.css" rel="stylesheet">
+    <script type="text/javascript" src="JavaScript/sample.js"></script>
+</head>
+
+<body>
+    <header class="header_nav">
+        <nav class="header_nav">
+            <a href="index.html" class="logo"><img src="images/sample_logo_k.png"></a>
+            <ul class="global_nav">
+              <a href="index.html" class="global_nav_item">
+                <li>Home</li>
+               </a>
+              <a href="#menu" class="global_nav_item">
+                <li>Menu</li>
+              </a>
+               <a href="contact.html" class="global_nav_item">
+                <li>Contact</li>
+              </a>
+            </ul>
+          </nav>
+      </header>
+    <div>
+        <h1 class="titulo">Venta de grano de café</h1>
+    </div>
+    <div class="fondo_precios">
+        <article class="section_inner menu_section">
+            <section>
+                <div class="center">
+                    <h2 class="subtitulo">Póngase en fila</h2>
+                </div>
+                <ul class="menu_list coffee_menu">
+                    <li class="coffee_menu_list_item">
+                        <div class="coffee_menu_content">
+                            <h3 class="menu_item_title">Mezcla original 200g</h3>
+                            <p class="coffee_menu_price">500 yenes</p>
+                        </div>
+                        <img src="images/sample_cafe1.jpg" class="coffee_menu_image" alt="Mezcla original 200g">
+                    </li>
+                    <li class="coffee_menu_list_item">
+                        <div class="coffee_menu_content">
+                            <h3 class="menu_item_title">Mezcla original 500g</h3>
+                            <p class="coffee_menu_price">900 yenes</p>
+                        </div>
+                        <img src="images/sample_cafe1.jpg" class="coffee_menu_image" alt="Mezcla original 500g">
+                    </li>
+                    <li class="coffee_menu_list_item">
+                        <div class="coffee_menu_content">
+                            <h3 class="menu_item_title">Mezcla especial 200g</h3>
+                            <p class="coffee_menu_price">700 yenes</p>
+                        </div>
+                        <img src="images/sample_cafe3.jpg" class="coffee_menu_image" alt="Mezcla especial 200g">
+                    </li>
+                    <li class="coffee_menu_list_item">
+                        <div class="coffee_menu_content">
+                            <h3 class="menu_item_title">Mezcla especial 500g</h3>
+                            <p class="coffee_menu_price">1200 yenes</p>
+                        </div>
+                        <img src="images/sample_cafe3.jpg" class="coffee_menu_image" alt="Mezcla especial 500g">
+                    </li>
+                </ul>
+                <ul class="tarifas">
+                    <h2>Información de envío</h2>
+                    <li>・La tarifa de envío es de 500 yenes si el monto total es inferior a 2000 yenes</li>
+                    <li>・250 yenes para pedidos superiores a 2000 yenes</li>
+                    <li>・Gratis para pedidos superiores a 3000 yenes</li>
+                </ul>
+            </section>
+        </article>
+    </div>
+    <form class="section_pedido">
+        <h2>Pedido</h2>
+        <p for="product">Por favor seleccione un producto</p>
+        <div>
+            <select id="product" required>
+                <option hidden value="0">Por favor, seleccione</option>
+                <option value="500">Mezcla original 200g 500 yenes</option>
+                <option value="900">Mezcla original 500g 900 yenes</option>
+                <option value="700">Mezcla especial 200g 700 yenes</option>
+                <option value="1200">Mezcla especial 500g 1200 yenes</option>
+            </select>
+            <p for="quantity">Por favor seleccione la cantidad</p>
+            <input type="number" min="1" max="5" id="quantity" required>
+        </div>
+        <br>
+        <input type="button" class="btn" value="Agregar" onclick="add()">
+        <input type="button" class="btn" value="Precio total" onclick="calc()">
+    </form>
+    <footer class="footer">
+        <nav>
+            <ul class="footer_nav">
+                <a class="footer_nav_item" href="#">
+                    <li>Home</li>
+                </a>
+                <a class="footer_nav_item" href="#menu">
+                    <li>Menu</li>
+                </a>
+                <a class="footer_nav_item" href="contact.html">
+                    <li>Contact</li>
+                </a>
+                <a href="index.html">
+                    <img class="footer_logo" src="./images/sample_logo_w.png" alt="logo">
+                </a>
+            </ul>
+            <p class="footer_right">© DIVE INTO CODE Corp. Todos los DERECHOS RESERVADOS.</p>
+        </nav>
+</body>
+
+</html>
